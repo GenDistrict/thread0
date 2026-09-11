@@ -241,12 +241,12 @@ thread0 learns from frequently repeated local approvals and denials to streamlin
 
 ## Download
 
-Current stable release: **0.1.241**
+Current stable release: **0.1.246**
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [thread0 0.1.241 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.241/windows/x64/thread0%20Setup%200.1.241.exe) | Windows 10/11, x64 |
-| macOS | [thread0 0.1.241 for macOS](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.241/macos/arm64/thread0-0.1.241-arm64.dmg) | macOS 13+, Apple Silicon |
+| Windows | [thread0 0.1.246 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.246/windows/x64/thread0%20Setup%200.1.246.exe) | Windows 10/11, x64 |
+| macOS | [thread0 0.1.246 for macOS](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.246/macos/arm64/thread0-0.1.246-arm64.dmg) | macOS 13+, Apple Silicon |
 
 The desktop downloads use immutable, version-specific URLs. Checksums are published in [SHA512SUMS.txt](SHA512SUMS.txt).
 
