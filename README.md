@@ -21,7 +21,7 @@ This repository is the official public distribution and support page for [thread
 | Home and usage overview | Local security controls |
 | --- | --- |
 | [![thread0 home and usage dashboard](docs/screenshots/01-home.png)](docs/screenshots/01-home.png) | [![thread0 privacy, prompt-injection, automation, and keep-awake controls](docs/screenshots/03-security.png)](docs/screenshots/03-security.png) |
-| Sessions, projects, plan usage, and estimated API cost at a glance. | Personal-data masking, context protection, prompt-injection checks, local auto-run learning, and keep-awake controls. |
+| The Home screenshot shows an earlier layout; 0.1.286 removes summary statistics and recent-session cards. | Personal-data masking, context protection, prompt-injection checks, local auto-run learning, and keep-awake controls. |
 
 All product screenshots above come from the real Electron application using an isolated capture profile. Names, projects, conversations, paths, organizations, usage values, and accounts are synthetic; no production or user data is present.
 
@@ -241,14 +241,14 @@ thread0 learns from frequently repeated local approvals and denials to streamlin
 
 ## Download
 
-Current stable release: **0.1.279 for Windows and macOS (Apple Silicon)**. Update both participating PCs before using a collaborator's own AI account.
+Current stable release: **0.1.286 for Windows and macOS (Apple Silicon)**. Update both participating PCs before using a collaborator's own AI account.
 
-[Release notes](release-notes/v0.1.279.md).
+[Release notes](release-notes/v0.1.286.md).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [thread0 0.1.279 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.279/windows/x64/thread0%20Setup%200.1.279.exe) | Windows 10/11, x64 |
-| macOS | [thread0 0.1.279 for macOS](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.279/macos/arm64/thread0-0.1.279-arm64.dmg) | macOS 13+, Apple Silicon |
+| Windows | [thread0 0.1.286 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.286/windows/x64/thread0%20Setup%200.1.286.exe) | Windows 10/11, x64 |
+| macOS | [thread0 0.1.286 for macOS](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.286/macos/arm64/thread0-0.1.286-arm64.dmg) | macOS 13+, Apple Silicon |
 
 The desktop downloads use immutable, version-specific URLs. Checksums are published in [SHA512SUMS.txt](SHA512SUMS.txt).
 
