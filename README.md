@@ -2,7 +2,7 @@
 
 **Every AI. Under control.**
 
-thread0 brings the agent tools you already use into one desktop workspace. Connect multiple Claude subscription and ChatGPT/Codex accounts, keep each account isolated, hand active work to another account or engine when a limit is reached, and supervise every session from one place.
+thread0 brings the agent tools you already use into one desktop workspace. Connect multiple Claude subscription and ChatGPT/Codex accounts plus Gemini through your Google sign-in, keep each account isolated, hand active work to another account or engine when a limit is reached, and supervise every session from one place.
 
 thread0 is designed to avoid creating another central store for your AI conversations. Prompts, responses, tool output, file contents, local paths, and provider credentials are not stored by a thread0 control-plane server. Content is still sent to the AI provider you choose and remains subject to that provider's data, retention, and model-training policies. If you require provider-side storage or training opt-out, you or your organization must select and configure the appropriate provider setting, plan, or contract; thread0 cannot opt out on your behalf or guarantee a provider's handling of submitted data.
 
@@ -108,8 +108,8 @@ Prompt-injection protection specifically inspects untrusted material such as att
 
 ## Everything in one agent workspace
 
-- Connect multiple Claude subscription and ChatGPT/Codex accounts on the same computer. Authentication and configuration are isolated per account.
-- Use Claude Code and Codex through one consistent interface while retaining their native harness capabilities: streaming, tool use, approval requests, models, and reasoning controls.
+- Connect multiple Claude subscription and ChatGPT/Codex accounts, plus Gemini (Google Antigravity CLI, one Google sign-in per PC), on the same computer. Authentication and configuration are isolated per account.
+- Use Claude Code, Codex and Gemini through one consistent interface while retaining their native harness capabilities: streaming, tool use, approval requests, models, and reasoning controls.
 - Track subscription limits, input/output/cache tokens, and estimated metered API cost in one place.
 - Continue a session with another account when a quota is reached, without discarding the current workspace.
 - Hand work between Claude and Codex with a recent-context summary and an explicit warning about any context that cannot be transferred exactly.
@@ -187,14 +187,15 @@ flowchart TB
 - Each paired device has revocable capability switches and a remote-method allowlist. Revocation closes the active connection.
 - Attachment access is constrained by path containment, symlink rejection, size limits, and sandboxing of untrusted HTML/SVG content.
 
-## Invite collaborators
+## Invite guests
 
-thread0 can give a scoped, audited seat on your work computer to a collaborator you choose — a developer, contractor, specialist, or colleague — without sharing accounts or passwords.
+thread0 can give a scoped, audited seat on your work computer (the host) to a guest you choose — a developer, contractor, specialist, or colleague — without sharing accounts or passwords.
 
-- **Email-bound invitations** with a role you pick: observe (read-only), collaborate (send messages, run sessions, respond to approvals), or full (adds terminal and file transfer). The collaborator signs in with that verified email; collaborator access does not reuse the personal-device pairing code flow.
-- **Collaborators see only what you invited them to** — the sessions they started or the ones you explicitly shared, never everything running on your machine.
-- **Folder and capability limits per collaborator**, with file downloads and uploads gated and every action recorded in an audit log you can review.
-- **Time-boxed by default.** Access ends at expiry (extendable by you) and can be revoked at any moment; revocation closes the live connection immediately.
+- **Email-bound invitations** with a role you pick: observe (read-only), collaborate (send messages, run sessions, respond to approvals, and send or receive files unless you turn that off), or full (adds terminal). Actions that affect the whole host PC — routines, MCP connectors, safe-mode restart — stay with the host. The guest signs in with that verified email; guest access does not reuse the personal-device pairing code flow.
+- **Guests see only what you invited them to** — the sessions they started or the ones you explicitly shared, never everything running on your machine.
+- **Folder and capability limits per guest**, adjustable while connected or before the invitation is accepted, with file downloads and uploads gated and every action recorded in an audit log you can review.
+- **Time-boxed by default.** Access lasts 1–30 days, until a date you pick, or with no end after an explicit confirmation, and can be revoked at any moment; revocation closes the live connection immediately.
+- **One conversation per guest**, with attachments, pasted images and dictation. Invitations you receive appear in the desktop app too, and **Remote** inside the desktop app opens your other PCs or joins a host as a guest.
 
 ## Work inside your own signed-in Chrome
 
@@ -210,8 +211,8 @@ thread0 learns from frequently repeated local approvals and denials to streamlin
 
 ## 한국어 핵심 요약
 
-- 여러 Claude 구독 계정과 ChatGPT/Codex 계정을 한 컴퓨터에 연결하고, 계정별 인증 정보를 격리해 한곳에서 사용할 수 있습니다.
-- Claude Code와 Codex의 스트리밍·도구·승인·모델·사고 강도 같은 하네스 기능을 하나의 UI에서 관리할 수 있습니다.
+- 여러 Claude 구독 계정과 ChatGPT/Codex 계정, 그리고 Google 로그인으로 Gemini를 한 컴퓨터에 연결하고, 계정별 인증 정보를 격리해 한곳에서 사용할 수 있습니다.
+- Claude Code·Codex·Gemini의 스트리밍·도구·승인·모델·사고 강도 같은 하네스 기능을 하나의 UI에서 관리할 수 있습니다.
 - thread0 중앙 서버가 프롬프트, 응답, 도구 출력, 작업 파일이나 경로, AI 자격 증명을 별도로 저장하지 않습니다. 단, 선택한 AI 제공자에는 요청이 전달되며 해당 제공자의 저장·학습·보존 정책이 적용됩니다. 제공자 측 저장이나 학습 제외가 필요하면 사용자 또는 조직이 해당 제공자의 설정·플랜·계약에서 직접 옵트아웃해야 하며, thread0가 이를 대신 보장하지는 않습니다.
 - llama.cpp GGUF, Ollama, LM Studio 같은 로컬 모델과 Google Vertex AI, Amazon Bedrock, Microsoft Azure AI Foundry, OpenRouter 및 승인된 호환 게이트웨이를 연결할 수 있습니다.
 - 사내망 AI는 서명된 조직 정책, 허용 목록, 관리형 게이트웨이와 필요한 경우 로컬 브리지를 통해 Claude/Codex 작업 흐름에 연결할 수 있습니다.
@@ -241,13 +242,13 @@ thread0 learns from frequently repeated local approvals and denials to streamlin
 
 ## Download
 
-Current stable release: **0.1.310 for Windows and 0.1.312 for macOS (Apple Silicon)** — the same release; the macOS build adds one Local AI display fix. Update the host PC and every collaborator PC that provides an account before sharing collaborator sessions.
+Current stable release: **0.1.343 for Windows** and **0.1.312 for macOS (Apple Silicon)**; the macOS build of 0.1.343 follows separately. Update the host PC and every collaborator PC that provides an account before sharing collaborator sessions.
 
-[Release notes](release-notes/v0.1.310.md).
+[Release notes for 0.1.343](release-notes/v0.1.343.md) · [0.1.310 / 0.1.312](release-notes/v0.1.310.md).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [thread0 0.1.310 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.310/windows/x64/thread0%20Setup%200.1.310.exe) | Windows 10/11, x64 |
+| Windows | [thread0 0.1.343 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.343/windows/x64/thread0%20Setup%200.1.343.exe) | Windows 10/11, x64 |
 | macOS | [thread0 0.1.312 for macOS](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.312/macos/arm64/thread0-0.1.312-arm64.dmg) | macOS 13+, Apple Silicon |
 
 The desktop downloads use immutable, version-specific URLs. Checksums are published in [SHA512SUMS.txt](SHA512SUMS.txt).
