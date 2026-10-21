@@ -244,14 +244,14 @@ thread0 learns from frequently repeated local approvals and denials to streamlin
 
 ## Download
 
-Current stable release: **0.1.360 for Windows and macOS (Apple Silicon)**. Update the host PC and every collaborator PC that provides an account before sharing collaborator sessions.
+Current stable release: **0.1.361 for Windows and macOS (Apple Silicon)**. Update the host PC and every collaborator PC that provides an account before sharing collaborator sessions.
 
-[Release notes for 0.1.360](release-notes/v0.1.360.md) · [0.1.354 / 0.1.357](release-notes/v0.1.354.md) · [0.1.353](release-notes/v0.1.353.md) · [0.1.343](release-notes/v0.1.343.md) · [0.1.310 / 0.1.312](release-notes/v0.1.310.md).
+[Release notes for 0.1.361](release-notes/v0.1.361.md) · [0.1.360](release-notes/v0.1.360.md) · [0.1.354 / 0.1.357](release-notes/v0.1.354.md) · [0.1.353](release-notes/v0.1.353.md) · [0.1.343](release-notes/v0.1.343.md) · [0.1.310 / 0.1.312](release-notes/v0.1.310.md).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| Windows | [thread0 0.1.360 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.360/windows/x64/thread0%20Setup%200.1.360.exe) | Windows 10/11, x64 |
-| macOS | [thread0 0.1.360 for macOS](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.360/macos/arm64/thread0-0.1.360-arm64.dmg) | macOS 13+, Apple Silicon |
+| Windows | [thread0 0.1.361 for Windows](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.361/windows/x64/thread0%20Setup%200.1.361.exe) | Windows 10/11, x64 |
+| macOS | [thread0 0.1.361 for macOS](https://storage.googleapis.com/gendistrict-agentdeck-updates/releases/0.1.361/macos/arm64/thread0-0.1.361-arm64.dmg) | macOS 13+, Apple Silicon |
 
 The desktop downloads use immutable, version-specific URLs. Checksums are published in [SHA512SUMS.txt](SHA512SUMS.txt).
 
